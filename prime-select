@@ -36,8 +36,8 @@ function WriteDesiredConfig() {
         if [ -f /etc/X11/xorg.conf.d/20-intel.conf ]; then
             rm /etc/X11/xorg.conf.d/20-intel.conf
         fi
-        cp /etc/prime/Xsetup /usr/share/gdm/scripts/
-        chmod +x /usr/share/gdm/scripts/Xsetup
+        # cp /etc/prime/Xsetup /usr/share/gdm/scripts/
+        # chmod +x /usr/share/offloadgdm/scripts/Xsetup
         if ! lsmod | grep "bbswitch" &> /dev/null ; then
             modprobe bbswitch
         fi
@@ -48,8 +48,8 @@ function WriteDesiredConfig() {
         if [ -f /etc/X11/xorg.conf ]; then
             rm /etc/X11/xorg.conf
         fi
-        cp /etc/prime/Xsetup_intel /usr/share/gdm/scripts/Xsetup
-        chmod +x /usr/share/gdm/scripts/Xsetup
+        # cp /etc/prime/Xsetup_intel /usr/share/gdm/scripts/Xsetup
+        # chmod +x /usr/share/gdm/scripts/Xsetup
     fi
 }
 
