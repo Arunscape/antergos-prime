@@ -17,7 +17,7 @@ If you want to install this manually, go to konstantingoretzki's fork and read h
 
 Basically I just wanted to use gdm instead of sddm, so installation goes something like this:
 
-sudo pacman -S nvidia gdm
+sudo pacman -S nvidia bbswitch gdm
 
 sudo systemctl disable lightdm
 
